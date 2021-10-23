@@ -55,8 +55,10 @@ namespace CRUD_Operations
             this.EmployeeRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EmployeeRecordDataGridView.Location = new System.Drawing.Point(12, 270);
             this.EmployeeRecordDataGridView.Name = "EmployeeRecordDataGridView";
+            this.EmployeeRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.EmployeeRecordDataGridView.Size = new System.Drawing.Size(544, 164);
             this.EmployeeRecordDataGridView.TabIndex = 0;
+            this.EmployeeRecordDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeRecordDataGridView_CellClick);
             // 
             // button1
             // 
@@ -144,6 +146,7 @@ namespace CRUD_Operations
             this.button4.Text = "Reset";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.UseWaitCursor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 

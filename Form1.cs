@@ -12,7 +12,7 @@ namespace CRUD_Operations
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection("Data Source=RAKIBUL-ERP;Initial Catalog=employeeCurd;Integrated Security=True");
-
+        public int EmployeeId;
         private void Form1_Load(object sender, EventArgs e)
         {
             GetEmployeeRecord();
@@ -48,7 +48,8 @@ namespace CRUD_Operations
                 con.Close();
 
                 MessageBox.Show("New Employee Infi is Successfullu saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                GetEmployeeRecord();
+                GetEmployeeRecord();//view the Employee recird into the text Grid
+                ResetFormControl();//Clear the all information into the text from.
             }
         }
 
@@ -81,6 +82,34 @@ namespace CRUD_Operations
             }
 
             return true;//now go to the Is valid methode..
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ResetFormControl();
+
+        }
+
+        private void ResetFormControl()
+        {
+            txtEmployeeName.Clear();
+            txtFatherName.Clear();
+            txtMotherName.Clear();
+            txtAddress.Clear();
+            txtMobile.Clear();
+
+            txtEmployeeName.Focus();//focus the employeeName carsure...
+        }
+
+        private void EmployeeRecordDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EmployeeId = Convert.ToInt32( EmployeeRecordDataGridView.Rows[0].Cells[0].Value);
+            txtEmployeeName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            txtFatherName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            txtMotherName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            txtAddress.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            txtMobile.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+
         }
     }
 }
