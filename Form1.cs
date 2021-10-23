@@ -12,7 +12,7 @@ namespace CRUD_Operations
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection("Data Source=RAKIBUL-ERP;Initial Catalog=employeeCurd;Integrated Security=True");
-        public int EmployeeId;
+        public int EmployeeID;
         private void Form1_Load(object sender, EventArgs e)
         {
             GetEmployeeRecord();
@@ -53,7 +53,7 @@ namespace CRUD_Operations
                 ResetFormControl();//Clear the all information into the text from.
             }
         }
-
+        // hare is the insert code...
         private bool Isvalid()
         {
             if (txtEmployeeName.Text == string.Empty)
@@ -90,9 +90,11 @@ namespace CRUD_Operations
             ResetFormControl();
 
         }
+        //hare isthe reset code...
 
         private void ResetFormControl()
         {
+           EmployeeID = 0;
             txtEmployeeName.Clear();
             txtFatherName.Clear();
             txtMotherName.Clear();
@@ -104,7 +106,7 @@ namespace CRUD_Operations
 
         private void EmployeeRecordDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            EmployeeId = Convert.ToInt32( EmployeeRecordDataGridView.Rows[0].Cells[0].Value);
+            EmployeeID = Convert.ToInt32( EmployeeRecordDataGridView.SelectedRows[0].Cells[0].Value);
             txtEmployeeName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             txtFatherName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[2].Value.ToString();
             txtMotherName.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[3].Value.ToString();
@@ -112,20 +114,21 @@ namespace CRUD_Operations
             txtMobile.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[5].Value.ToString();
 
         }
+        //here is the update code...
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (EmployeeId > 0)
+            if (EmployeeID > 0)
             
                 {
                     SqlCommand cmd = new SqlCommand("UPDATE EmployeeTb SET Name = @name,Fathername = @FatherName,MotherName = @MotherName,Address = @Address,Mobile = @Mobile WHERE EmployeeID = @ID", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@name", txtEmployeeName.Text);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@name", txtEmployeeName.Text);
                     cmd.Parameters.AddWithValue("@FatherName", txtFatherName.Text);
                     cmd.Parameters.AddWithValue("@MotherName", txtMotherName.Text);
                     cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
                     cmd.Parameters.AddWithValue("@Mobile", txtMobile.Text);
-                    cmd.Parameters.AddWithValue("@ID", this.EmployeeId);
+                    cmd.Parameters.AddWithValue("@ID", this.EmployeeID);
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -139,6 +142,30 @@ namespace CRUD_Operations
             else
             {
                 MessageBox.Show("Please select an employee to update his informations", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //hare is the delet code...
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if ( EmployeeID > 0)
+            {
+                SqlCommand cmd = new SqlCommand("DELETE FROM EmployeeTb WHERE EmployeeID = @ID", con);
+                cmd.CommandType = CommandType.Text;
+                
+                cmd.Parameters.AddWithValue("@ID", this.EmployeeID);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Employee in deleted from the system", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                GetEmployeeRecord();//view the Employee recird into the text Grid
+                ResetFormControl();//Clear the all information into the text from.
+            }
+            else
+            {
+                MessageBox.Show("Please select an employee to Delect", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
