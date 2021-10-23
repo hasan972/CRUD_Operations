@@ -53,10 +53,10 @@ namespace CRUD_Operations
             this.EmployeeRecordDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.EmployeeRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EmployeeRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EmployeeRecordDataGridView.Location = new System.Drawing.Point(12, 270);
+            this.EmployeeRecordDataGridView.Location = new System.Drawing.Point(12, 264);
             this.EmployeeRecordDataGridView.Name = "EmployeeRecordDataGridView";
             this.EmployeeRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmployeeRecordDataGridView.Size = new System.Drawing.Size(544, 164);
+            this.EmployeeRecordDataGridView.Size = new System.Drawing.Size(587, 180);
             this.EmployeeRecordDataGridView.TabIndex = 0;
             this.EmployeeRecordDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeRecordDataGridView_CellClick);
             // 
@@ -108,7 +108,7 @@ namespace CRUD_Operations
             this.button2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(155, 217);
+            this.button2.Location = new System.Drawing.Point(165, 217);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(75, 31);
@@ -124,7 +124,7 @@ namespace CRUD_Operations
             this.button3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(336, 217);
+            this.button3.Location = new System.Drawing.Point(365, 217);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(75, 31);
@@ -140,7 +140,7 @@ namespace CRUD_Operations
             this.button4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(417, 217);
+            this.button4.Location = new System.Drawing.Point(474, 217);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(75, 31);
@@ -210,7 +210,7 @@ namespace CRUD_Operations
             this.label4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(312, 30);
+            this.label4.Location = new System.Drawing.Point(327, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 19);
             this.label4.TabIndex = 11;
@@ -222,9 +222,9 @@ namespace CRUD_Operations
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtAddress.Location = new System.Drawing.Point(395, 27);
+            this.txtAddress.Location = new System.Drawing.Point(417, 29);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(138, 23);
+            this.txtAddress.Size = new System.Drawing.Size(159, 23);
             this.txtAddress.TabIndex = 12;
             this.txtAddress.UseWaitCursor = true;
             // 
@@ -236,7 +236,7 @@ namespace CRUD_Operations
             this.label5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(312, 68);
+            this.label5.Location = new System.Drawing.Point(327, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 19);
             this.label5.TabIndex = 13;
@@ -248,9 +248,9 @@ namespace CRUD_Operations
             this.txtMobile.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtMobile.Location = new System.Drawing.Point(395, 68);
+            this.txtMobile.Location = new System.Drawing.Point(417, 64);
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(138, 23);
+            this.txtMobile.Size = new System.Drawing.Size(159, 23);
             this.txtMobile.TabIndex = 14;
             this.txtMobile.UseWaitCursor = true;
             // 
@@ -260,7 +260,7 @@ namespace CRUD_Operations
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::CRUD_Operations.Properties.Resources.istockphoto_952039286_170667a;
-            this.ClientSize = new System.Drawing.Size(568, 456);
+            this.ClientSize = new System.Drawing.Size(611, 456);
             this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAddress);
