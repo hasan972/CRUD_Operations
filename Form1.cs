@@ -37,6 +37,7 @@ namespace CRUD_Operations
             if (Isvalid())
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO EmployeeTb VALUES(@name, @FatherName,@MotherName,@Address,@Mobile)",con);
+                cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@name", txtEmployeeName.Text);
                 cmd.Parameters.AddWithValue("@FatherName", txtFatherName.Text);
                 cmd.Parameters.AddWithValue("@MotherName", txtMotherName.Text);
@@ -110,6 +111,35 @@ namespace CRUD_Operations
             txtAddress.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[4].Value.ToString();
             txtMobile.Text = EmployeeRecordDataGridView.SelectedRows[0].Cells[5].Value.ToString();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (EmployeeId > 0)
+            
+                {
+                    SqlCommand cmd = new SqlCommand("UPDATE EmployeeTb SET Name = @name,Fathername = @FatherName,MotherName = @MotherName,Address = @Address,Mobile = @Mobile WHERE EmployeeID = @ID", con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@name", txtEmployeeName.Text);
+                    cmd.Parameters.AddWithValue("@FatherName", txtFatherName.Text);
+                    cmd.Parameters.AddWithValue("@MotherName", txtMotherName.Text);
+                    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+                    cmd.Parameters.AddWithValue("@Mobile", txtMobile.Text);
+                    cmd.Parameters.AddWithValue("@ID", this.EmployeeId);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                    MessageBox.Show("Employee information is updated succussfully", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
+                
+                    GetEmployeeRecord();//view the Employee recird into the text Grid
+                    ResetFormControl();//Clear the all information into the text from.
+            }
+            else
+            {
+                MessageBox.Show("Please select an employee to update his informations", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
