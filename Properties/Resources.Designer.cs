@@ -63,6 +63,16 @@ namespace CRUD_Operations.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cover_pic {
+            get {
+                object obj = ResourceManager.GetObject("cover_pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_952039286_170667a {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-952039286-170667a", resourceCulture);

@@ -53,6 +53,7 @@ namespace CRUD_Operations
             this.EmployeeRecordDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.EmployeeRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EmployeeRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EmployeeRecordDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.EmployeeRecordDataGridView.Location = new System.Drawing.Point(12, 264);
             this.EmployeeRecordDataGridView.Name = "EmployeeRecordDataGridView";
             this.EmployeeRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -84,7 +85,7 @@ namespace CRUD_Operations
             this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 30);
+            this.label1.Location = new System.Drawing.Point(28, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 19);
             this.label1.TabIndex = 2;
@@ -94,9 +95,9 @@ namespace CRUD_Operations
             // txtEmployeeName
             // 
             this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployeeName.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtEmployeeName.Location = new System.Drawing.Point(153, 27);
+            this.txtEmployeeName.Location = new System.Drawing.Point(165, 26);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(138, 23);
             this.txtEmployeeName.TabIndex = 3;
@@ -124,7 +125,7 @@ namespace CRUD_Operations
             this.button3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(365, 217);
+            this.button3.Location = new System.Drawing.Point(377, 217);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(75, 31);
@@ -158,7 +159,7 @@ namespace CRUD_Operations
             this.label2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 68);
+            this.label2.Location = new System.Drawing.Point(28, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 19);
             this.label2.TabIndex = 7;
@@ -168,9 +169,9 @@ namespace CRUD_Operations
             // txtFatherName
             // 
             this.txtFatherName.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtFatherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFatherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFatherName.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtFatherName.Location = new System.Drawing.Point(155, 62);
+            this.txtFatherName.Location = new System.Drawing.Point(165, 68);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(138, 23);
             this.txtFatherName.TabIndex = 8;
@@ -179,9 +180,9 @@ namespace CRUD_Operations
             // txtMotherName
             // 
             this.txtMotherName.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtMotherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotherName.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtMotherName.Location = new System.Drawing.Point(155, 100);
+            this.txtMotherName.Location = new System.Drawing.Point(165, 106);
             this.txtMotherName.Name = "txtMotherName";
             this.txtMotherName.Size = new System.Drawing.Size(138, 23);
             this.txtMotherName.TabIndex = 9;
@@ -195,7 +196,7 @@ namespace CRUD_Operations
             this.label3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(9, 106);
+            this.label3.Location = new System.Drawing.Point(28, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 19);
             this.label3.TabIndex = 10;
@@ -220,7 +221,7 @@ namespace CRUD_Operations
             // txtAddress
             // 
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.DarkRed;
             this.txtAddress.Location = new System.Drawing.Point(417, 29);
             this.txtAddress.Name = "txtAddress";
@@ -246,7 +247,7 @@ namespace CRUD_Operations
             // txtMobile
             // 
             this.txtMobile.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.ForeColor = System.Drawing.Color.DarkRed;
             this.txtMobile.Location = new System.Drawing.Point(417, 64);
             this.txtMobile.Name = "txtMobile";
@@ -259,7 +260,7 @@ namespace CRUD_Operations
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::CRUD_Operations.Properties.Resources.istockphoto_952039286_170667a;
+            this.BackgroundImage = global::CRUD_Operations.Properties.Resources.cover_pic;
             this.ClientSize = new System.Drawing.Size(611, 456);
             this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.label5);
@@ -276,14 +277,18 @@ namespace CRUD_Operations
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.EmployeeRecordDataGridView);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee Informations";
+            this.TransparencyKey = System.Drawing.Color.Gray;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeRecordDataGridView)).EndInit();
             this.ResumeLayout(false);

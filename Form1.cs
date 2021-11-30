@@ -48,7 +48,7 @@ namespace CRUD_Operations
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                MessageBox.Show("New Employee Infi is Successfullu saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("New Employee Information is Successfully saved in the system", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 GetEmployeeRecord();//view the Employee recird into the text Grid
                 ResetFormControl();//Clear the all information into the text from.
             }
@@ -90,7 +90,7 @@ namespace CRUD_Operations
             ResetFormControl();
 
         }
-        //hare isthe reset code...
+        //hare is the reset code...
 
         private void ResetFormControl()
         {
@@ -134,8 +134,6 @@ namespace CRUD_Operations
                     con.Close();
 
                     MessageBox.Show("Employee information is updated succussfully", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                  
-                
                     GetEmployeeRecord();//view the Employee recird into the text Grid
                     ResetFormControl();//Clear the all information into the text from.
             }
@@ -163,10 +161,13 @@ namespace CRUD_Operations
                 GetEmployeeRecord();//view the Employee recird into the text Grid
                 ResetFormControl();//Clear the all information into the text from.
             }
-            else
+            else 
             {
                 MessageBox.Show("Please select an employee to Delect", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox.Show("Select the process","Select" ,MessageBoxButtons.OK);
+                MessageBox.Show("Plea");
             }
+
         }
     }
 }
